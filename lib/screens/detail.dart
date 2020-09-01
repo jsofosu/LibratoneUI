@@ -42,7 +42,8 @@ class Detail extends StatefulWidget {
                     left: 30,
                     right: 30,
                   ),
-                  child: Column(
+                  child: SingleChildScrollView(
+                    child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Row(
@@ -169,6 +170,7 @@ class Detail extends StatefulWidget {
                         ),
                       )
                     ],
+                  ),
                   ),
                 ))),
         SafeArea(
