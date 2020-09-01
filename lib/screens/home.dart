@@ -8,7 +8,8 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Padding(
+      body:SingleChildScrollView(
+        child: Padding(
         padding: const EdgeInsets.all(30),
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -180,6 +181,7 @@ class Home extends StatelessWidget {
                 ],
               )
             ]),
+      ),
       ),
      /* bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.white,
