@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:music/widgets/card.dart';
-import 'package:music/screens/data.dart';
+import 'package:music/data/data.dart';
 import 'package:music/screens/detail.dart';
 
 class Home extends StatelessWidget {
@@ -130,23 +130,3 @@ class Home extends StatelessWidget {
   }
 }
 
-class HomeCard extends StatelessWidget {
-  final number;
-  HomeCard(this.number);
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      child: Scroll(
-        rol: rolls[number],
-      ),
-      onTap: () {
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => Detail(scl: rolls[number]),
-            ));
-      },
-    );
-  }
-}

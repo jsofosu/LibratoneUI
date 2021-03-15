@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:music/screens/data.dart';
+import 'package:music/data/data.dart';
 
 
 class Detail extends StatefulWidget {
