@@ -21,37 +21,29 @@ class Home extends StatelessWidget {
                         Container(
                           child: Row(children: <Widget>[
                             Container(
-                              height: 50,
-                              width: 50,
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  image: DecorationImage(
-                                      image: AssetImage('images/m4.jpeg'),
-                                      fit: BoxFit.cover)),
-                            ),
+                                height: 50,
+                                width: 50,
+                                decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                        image: AssetImage('images/m4.jpeg'),
+                                        fit: BoxFit.cover))),
                             SizedBox(width: 5)
                           ]),
                         ),
                         Container(
-                            child: Row(
-                          children: <Widget>[
-                            IconButton(
-                                icon: Icon(
-                                  Icons.search,
-                                  color: Colors.black54,
-                                ),
-                                iconSize: 31,
-                                onPressed: null),
-                            SizedBox(width: 30),
-                            IconButton(
-                                icon: Icon(
-                                  Icons.shopping_cart,
-                                  color: Colors.black54,
-                                ),
-                                iconSize: 31,
-                                onPressed: null)
-                          ],
-                        ))
+                            child: Row(children: <Widget>[
+                          IconButton(
+                              icon: Icon(Icons.search, color: Colors.black54),
+                              iconSize: 31,
+                              onPressed: null),
+                          SizedBox(width: 30),
+                          IconButton(
+                              icon: Icon(Icons.shopping_cart,
+                                  color: Colors.black54),
+                              iconSize: 31,
+                              onPressed: null)
+                        ]))
                       ]),
                 ),
                 SizedBox(height: 20),
@@ -60,9 +52,7 @@ class Home extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       'Top',
-                      style: TextStyle(
-                        fontSize: 25,
-                      ),
+                      style: TextStyle(fontSize: 25),
                     ),
                     IconButton(
                       icon: Icon(Icons.more_horiz),
@@ -85,7 +75,7 @@ class Home extends StatelessWidget {
                         SizedBox(width: 35),
                         HomeCard(2),
                         SizedBox(width: 35),
-                        HomeCard(3),
+                        HomeCard(3)
                       ],
                     ),
                   ),
@@ -94,33 +84,19 @@ class Home extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
-                    Column(
-                      children: <Widget>[
-                        IconButton(
-                          icon: Icon(Icons.trending_up),
-                          onPressed: null,
-                        ),
-                        Text('Trending')
-                      ],
-                    ),
-                    Column(
-                      children: <Widget>[
-                        IconButton(
-                          icon: Icon(Icons.category),
-                          onPressed: null,
-                        ),
-                        Text('Categories')
-                      ],
-                    ),
-                    Column(
-                      children: <Widget>[
-                        IconButton(
-                          icon: Icon(Icons.style),
-                          onPressed: null,
-                        ),
-                        Text('Style')
-                      ],
-                    )
+                    Column(children: <Widget>[
+                      IconButton(
+                          icon: Icon(Icons.trending_up), onPressed: null),
+                      Text('Trending')
+                    ]),
+                    Column(children: <Widget>[
+                      IconButton(icon: Icon(Icons.category), onPressed: null),
+                      Text('Categories')
+                    ]),
+                    Column(children: <Widget>[
+                      IconButton(icon: Icon(Icons.style), onPressed: null),
+                      Text('Style')
+                    ])
                   ],
                 )
               ]),
@@ -129,4 +105,3 @@ class Home extends StatelessWidget {
     );
   }
 }
-
