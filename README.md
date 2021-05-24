@@ -1,4 +1,5 @@
 # Libratone Store App UI Flutter Clone
+Flutter UI for Libratone Store App, that displays the available headphones and gives details about it.
 
 ## Dribbble Reference by [Ivan Str](https://dribbble.com/istr)
 
@@ -11,6 +12,8 @@ Home  | Detail
 ![Home](/screenshots/home.png) | ![Detail](/screenshots/detail.png)
 
 ## Features
+* Display available headphones 
+* Show details ontap of item
 * Beautiful Design
 * Readable code
 * Easy Navigation
@@ -19,6 +22,4 @@ Home  | Detail
 * Clone the project (https://github.com/jsofosu/libratone.git)
 * Install all dependencies by running `flutter pub get` in terminal
 
-## Technologies
-* Dart 2.12.2
-* Flutter 2.0.4
+
